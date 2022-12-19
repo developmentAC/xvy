@@ -1,4 +1,4 @@
-# XvY (XvsY) A Simple Linear Regression Calculator
+# XvY: A Simple Linear Regression Calculator
 
 ## 19 Dec 2022
 
