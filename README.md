@@ -12,7 +12,7 @@ This is a regression calculator of data column $x$ over data column $y$ from the
 
 ## Data
 
-The `csv` files will take the following form. The `x` column is separated from the `y` column.
+The `csv` files will take the following form. The `x` column (first) is separated from the `y` column (second).
 
 ```
 1,15
