@@ -1,6 +1,6 @@
 # XvY: A Simple Linear Regression Calculator
 
-## 19 Dec 2022
+## Date: 19 Dec 2022
 
 ![graphics/xvsy.png](graphics/xvsy.png)
 
