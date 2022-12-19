@@ -8,7 +8,7 @@
 
 ## Detail
 
-This is a regression calculator of data column $x$ over data column $y$ from the input file. The output is an interactive graph.
+This is a regression calculator of data column $x$ over data column $y$ from the input file. The output is an interactive graph that opens in the default browser.
 
 ## Data
 
@@ -37,6 +37,23 @@ The `csv` files will take the following form.
 20,51
 21,57
 22,51
+```
+
+## Dependencies
+The necessary libraries for this project are listed below. To make the installation of these dependencies easier on the user, we use `Poetry` to manage the project.
+
+```
+tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.23.5"
+rich = "^12.6.0"
+typer = "^0.7.0"
+black = "^22.12.0"
+sklearn = "^0.0.post1"
+scikit-learn = "^1.2.0"
+plotly = "^5.11.0"
+pandas = "^1.5.2"
+matplotlib = "^3.6.2"
 ```
 
 ## Running the program
