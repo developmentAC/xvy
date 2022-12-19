@@ -1,18 +1,17 @@
-# Title
+# XvY ($X$vs$Y$) Linear Regression
 
-XvY ($X&vs$Y$) Linear Regression
-
-## Date
-
-19 Dec 2022
+## 19 Dec 2022
 
 ![graphics/xvsy.png](graphics/xvsy.png)
 
 ## Detail
+
 This is a regression calculator of data column $x$ over data column $y$ from the input file. The output is an interactive graph.
 
 ## Data
+
 The `csv` files will take the following form.
+
 ```
 1,15
 2,14
@@ -39,6 +38,7 @@ The `csv` files will take the following form.
 ```
 
 ## Running the program
+
 To run the program, enter the following commands.
 
 * In the root directory of the project. Note this is where you will find the file, `pyproject.toml`
@@ -46,9 +46,10 @@ To run the program, enter the following commands.
 * Run the program.
   + `poetry run xvy --data-file input/majors.csv`
 
-
 ## Output
+
 In the terminal window, the y-predicted values will be shown. These values give the red line in the Plotly plot which is outputted.
+
 ![graphics/plot.png](graphics/plot.png)
 
 
