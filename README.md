@@ -64,6 +64,10 @@ To run the program, enter the following commands.
   + `poetry install`
 * Run the program.
   + `poetry run xvy --data-file input/majors.csv`
+* Get help in using the program (i.e., find out what the parameters are).
+  + `poetry run xvy --help`
+* See the splash page.
+  + `poetry run xvy --bighelp`
 
 ## Output
 
