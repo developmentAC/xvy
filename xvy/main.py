@@ -28,13 +28,12 @@ def main(
     data_file: Path = typer.Option(None),
     bighelp: bool = False,
     showData: bool = False,
-
 ) -> None:
     """Summarize the data values stored in a file."""
     # display details about the file provided on the command line
     data_text = ""
     # --> the file was not specified so we cannot continue using program
-    if bighelp: 
+    if bighelp:
         launcher.helper()
         exit()
 
@@ -106,7 +105,9 @@ def wrangleData(data_text: str, showData) -> str:
         if len(x_list) == len(y_list):
             console.print("\n\t Data:\n\t n : x , y\n\t ---------")
             for i in range(len(x_list)):
-                console.print(f"\t {i} : {x_list[i]:.1f}, {y_list[i]:.1f} ", style="White")
+                console.print(
+                    f"\t {i} : {x_list[i]:.1f}, {y_list[i]:.1f} ", style="White"
+                )
             console.print("\n")
 
     # console.print(f"\t [+] x_list : {x_list}: {type(x_list)}")
