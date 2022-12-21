@@ -14,10 +14,12 @@ def multiplot(
     myTitle_str: str, x0_list: list, y0_list: list, x1_list: list, y1_list: list
 ) -> None:
     """plots the data along with the regression model line (y1_list from y_pred). Note, the np.array() data structure needs to be converted to a basic Python list before Plotly will work with the list."""
+    # these x-axis settings may need attention since unsorted and sorted datasets may upset the x-axis values
+    
     # x0 = np.linspace(0, len(y0_list), len(y0_list))  # x_list could be a list of values
     x0 = np.linspace(0, 1, len(y0_list))  # x_list could be a list of values
     # x1 = np.linspace(0, len(x1_list), len(x1_list))  # x_list could be a list of values
-    x1 = np.linspace(0, 1, len(x1_list))  # x_list could be a list of values
+    x1 = np.linspace(0, 1, len(y1_list))  # x_list could be a list of values
 
     # Need to convert np.array() to a simple python list.
     # Not sure why Plotly is unable to handle np.array() structures... ?

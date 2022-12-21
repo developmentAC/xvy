@@ -81,7 +81,7 @@ def wrangleData(data_text: str, showData) -> str:
 
     data_line_count = len(data_text.splitlines())
     console.print(
-        f":microscope: The data file contains {data_line_count} data values in it!! :cake:"
+        f"\t :microscope: The data file contains {data_line_count} data values in it!! :cake:"
     )
 
     # console.print(f"data_text : {data_text} ")
@@ -125,7 +125,8 @@ def wrangleData(data_text: str, showData) -> str:
 
 
 def runModel(xData, yData) -> list:
-    """define and run the model"""
+    """Define and run the model"""
+    # console.print("Modeling fitting data by both data sets.")
     model = LinearRegression()
     # model.fit(xData, yData)
     model = LinearRegression().fit(xData, yData)
@@ -152,12 +153,13 @@ def runModel(xData, yData) -> list:
 
 
 def runNewModel(xData, yData):
-    """define and run another model with new fitting"""
+    """Define and run another model with new fitting"""
+    # console.print("Modeling by reshape data by (-1,1).")
     model = LinearRegression().fit(xData, yData.reshape((-1, 1)))
     r_sq = model.score(xData, yData)
-    console.print(f"\t [+] NM: Multiple R-squared: {r_sq}")  # , style="blue on cyan")
-    console.print(f"\t [+] NewMod: intercept: {model.intercept_}")
-    console.print(f"\t [+] NewMod: slope: {model.coef_}")
+    console.print(f"\t [+] Multiple R-squared: {r_sq}")  # , style="blue on cyan")
+    console.print(f"\t [+] Intercept: {model.intercept_}")
+    console.print(f"\t [+] Slope: {model.coef_}")
     console.print(
         f"\t [+] Model Line formula : y = {model.coef_[0][0]} * x + {model.intercept_[0]}"
     )
