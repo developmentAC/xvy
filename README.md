@@ -40,6 +40,7 @@ The `csv` files will take the following form. The `x` column (first) is separate
 ```
 
 ## Dependencies
+
 The necessary libraries for this project are listed below. To make the installation of these dependencies easier on the user, we use `Poetry` to manage the project.
 
 ```
@@ -57,6 +58,8 @@ matplotlib = "^3.6.2"
 ```
 
 ## Running the program
+
+You must first install [Poetry](https://python-poetry.org/) to manage the code's dependencies, and to run the program.
 
 To run the program, enter the following commands.
 
