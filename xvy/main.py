@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# see more example code at
-# https://hub.gke2.mybinder.org/user/scikit-learn-scikit-learn-m20vqp5l/lab/tree/notebooks/auto_examples/linear_model/plot_ols.ipynb
-
 from xvy import plotter as pl
 from xvy import launcher
 
